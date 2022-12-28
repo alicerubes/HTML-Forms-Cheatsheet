@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./resources/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway+Dots&family=Raleway:wght@100;400;600&display=swap" rel="stylesheet">
+    <title>HTML Forms Cheatsheet</title>
+</head>
+
+<body>
+    <main>
+        <div class="header">
+            <h1>HTML Forms Cheatsheet</h1>
+            <p>
+                Info from <a href="https://www.codecademy.com/learn/learn-html/modules/learn-html-forms/cheatsheet" target="_blank">Codecademy.</a>
+            </p>
+            <p>Created by Alice G.</p>
+        </div>
+        <div class="subheader">
+            <h2>Form Elements</h2>
+        </div>
+        <div class="elements-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="tag-head">Tag</th>
+                        <th class="name-head">Name</th>
+                        <th class="desc-head">Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <span class="code">&lt;form&gt;</span>
+                        </td>
+                        <td>Form</td>
+                        <td class="desc-col">Used to collect and send information to an external source.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="code">&lt;input&gt;</span>
+                        </td>
+                        <td>Input</td>
+                        <td class="desc-col">Used for multiple interactable inputs.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="code">&lt;textarea&gt;</span>
+                        </td>
+                        <td>Text Area</td>
+                        <td class="desc-col">Creates a text-box for multi-line input. Supports the rows and cols attributes. Needs a closing tag.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="code">&lt;select&gt;</span>
+                        </td>
+                        <td>Select</td>
+                        <td class="desc-col">Creates a dropdown list. A list of choices for the dropdown list can be created using one or more <span class="code">&lt;option&gt;</span> elements. By default, only one <span class="code">&lt;option&gt;</span> can be selected at a time.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="code">&lt;datalist&gt;</span>
+                        </td>
+                        <td>Datalist</td>
+                        <td class="desc-col">Provides users a list of pre-defined options, and allows them to write alternative inputs as well.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="code">&lt;label&gt;</span>
+                        </td>
+                        <td>Label</td>
+                        <td class="desc-col">Provides identification for a specific <span class="code">&lt;input&gt;</span> based on matching values of the <span class="code">&lt;input&gt;</span>‘s id attribute and the <span class="code">&lt;label&gt;</span>‘s for attribute.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="subheader">
+            <h2>Form Input Types</h2>
+        </div>
+
+        <div class="inputs-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="tag-head">Type</th>
+                        <th class="desc-head">Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Checkbox</td>
+                        <td class="desc-col">Render a single checkbox item. Use the same name attribute for multiple checkboxes on the same topic.</td>
+                    </tr>
+                    <tr>
+                        <td>Number</td>
+                        <td class="desc-col">Allow the user to enter only numbers and a few special characters inside the field.</td>
+                    </tr>
+                    <tr>
+                        <td>Checkbox</td>
+                        <td class="desc-col">Render a single checkbox item. Use the same name attribute for multiple checkboxes on the same topic.</td>
+                    </tr>
+                    <tr>
+                        <td>Range</td>
+                        <td class="desc-col">Add a range slider to act as a selector between a minimum and a maximum value. These values are set using the min and max attributes respectively. The slider can be adjusted to move in different steps or increments using the step attribute.</td>
+                    </tr>
+                    <tr>
+                        <td>Text</td>
+                        <td class="desc-col">Renders a single row input field that users can type text inside.</td>
+                    </tr>
+                    <tr>
+                        <td>Radio Button</td>
+                        <td class="desc-col">Renders a single radio button. Multiple radio buttons of a related topic are given the same name attribute value. Only a single option can be chosen from a group of radio buttons.</td>
+                    </tr>
+                    <tr>
+                        <td>Password</td>
+                        <td class="desc-col">Renders a single row input field which allows the user to type censored text inside the field.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="subheader">
+            <h2>Attributes</h2>
+        </div>
+
+        <div class="attributes-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="tag-head">Attribute</th>
+                        <th class="name-head">Name</th>
+                        <th class="desc-head">Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <span class="code">action</span>
+                        </td>
+                        <td>Action</td>
+                        <td class="desc-col">Tells the form to send the information. A URL is assigned that determines the recipient of the information. </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="code">method</span>
+                        </td>
+                        <td>Method</td>
+                        <td class="desc-col">Tells the form what to do with that information once it’s sent. An HTTP verb is assigned to the method attribute that determines the action to be performed.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="code">type="submit"</span>
+                        </td>
+                        <td>Submit</td>
+                        <td class="desc-col">A submit button will be rendered and, by default, will submit the <span class="code">&lt;form&gt;</span> and execute its action.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="code">name</span>
+                        </td>
+                        <td>Name</td>
+                        <td class="desc-col">In order for a form to send data, it needs to be able to put it into key-value pairs. This is achieved by setting the <span class="code">name</span> attribute of the input element. The <span class="code">name</span> will become the key and the <span class="code">value</span> of the input will become the <span class="code">value</span> the form submits corresponding to the key.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="code">required</span>
+                        </td>
+                        <td>Required</td>
+                        <td class="desc-col">Specifies that the field must include a value. Won't allow form submit without this input field filled.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="code">max</span>
+                        </td>
+                        <td>Maximum Value</td>
+                        <td class="desc-col">Specifies the maximum value for a numerical field.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="code">maxlength</span>
+                        </td>
+                        <td>Maximum Length</td>
+                        <td class="desc-col">Specifies the maximum number of characters that can be entered into the field.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="code">pattern</span>
+                        </td>
+                        <td>Pattern</td>
+                        <td class="desc-col">Uses a regular expression to match against (or validate) the value of the <span class="code">&lt;input&gt;</span>, when the form is submitted.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="code">minlength</span>
+                        </td>
+                        <td>Minimum Length</td>
+                        <td class="desc-col">Specifies minimum amount of characters in a text field.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="code">min</span>
+                        </td>
+                        <td>Minimum Value</td>
+                        <td class="desc-col">Specifies minimum value for a numerical field.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    
+</body>
+</html>
